@@ -1,0 +1,85 @@
+{
+  "id": "633db39c-58dd-4152-ad38-5495b1c381f4",
+  "version": "2.0",
+  "name": "ms_assignment",
+  "url": "https://www.mha.gov.in",
+  "tests": [{
+    "id": "c39a24b0-3db3-48b7-bb17-0c7e2aaeca91",
+    "name": "task",
+    "commands": [{
+      "id": "8b77602c-d772-46b9-bba1-609873d8aa49",
+      "comment": "",
+      "command": "open",
+      "target": "/en",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a0b0715f-d6b4-4639-838b-2ae7f51e2ec4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x832",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "366fcabf-ffe8-4db2-ae16-5ee1bc019ed8",
+      "comment": "",
+      "command": "click",
+      "target": "id=btn-more-toggle",
+      "targets": [
+        ["id=btn-more-toggle", "id"],
+        ["linkText=More", "linkText"],
+        ["css=#btn-more-toggle", "css:finder"],
+        ["xpath=//a[contains(text(),'More')]", "xpath:link"],
+        ["xpath=//a[@id='btn-more-toggle']", "xpath:attributes"],
+        ["xpath=//ul[@id='accessible-megamenu-1709313498868-1']/li[8]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[12]", "xpath:href"],
+        ["xpath=//nav/ul/li[8]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'More')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f92e0c9-4f92-4f68-a47f-f75b94823c5a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.focus > .indicator",
+      "targets": [
+        ["css=.focus > .indicator", "css:finder"],
+        ["xpath=//ul[@id='accessible-megamenu-1709313499099-26']/li[2]/span/span", "xpath:idRelative"],
+        ["xpath=//nav/nav/ul/li[2]/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "83064ac3-6264-48a5-b6b2-992b25133caf",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Circulars",
+      "targets": [
+        ["linkText=Circulars", "linkText"],
+        ["css=.focus", "css:finder"],
+        ["xpath=//a[contains(text(),'Circulars')]", "xpath:link"],
+        ["xpath=//div[@id='accessible-megamenu-1709313498875-16']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/en/notifications/circular')]", "xpath:href"],
+        ["xpath=//nav/nav/ul/li[2]/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Circulars')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "55ec0bfe-991e-4f03-9673-5ba17fdb40d9",
+      "comment": "",
+      "command": "pause",
+      "target": "3000",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "f8eb5a82-abb3-47b7-9971-3e95e286f00c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c39a24b0-3db3-48b7-bb17-0c7e2aaeca91"]
+  }],
+  "urls": ["https://www.mha.gov.in/"],
+  "plugins": []
+}
